@@ -2,7 +2,7 @@ import React from 'react'
 
 function Cashmanagement() {
   return (
-    <div>
+    <div className='ml-80'>
       Cash Management after change
     </div>
   )

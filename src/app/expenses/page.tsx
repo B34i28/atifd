@@ -2,7 +2,7 @@ import React from 'react'
 
 function Expenses() {
   return (
-    <div>
+    <div className='ml-80'>
       Expenses after change
     </div>
   )
