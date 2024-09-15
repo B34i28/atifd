@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Listofstocks from '../components/Listofstocks';
 

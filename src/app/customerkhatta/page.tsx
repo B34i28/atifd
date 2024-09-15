@@ -1,5 +1,5 @@
+"use client"
 import React from 'react'
-import List from '../components/Listofsupplier';
 import Listofcustomer from '../components/Listofcustomer';
 
 function Cutomerkhatta() {
