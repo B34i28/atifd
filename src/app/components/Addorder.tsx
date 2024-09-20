@@ -18,7 +18,7 @@ function Addorder() {
     const handleSubmit = async () => {
       try {
         if (name && number && cnic && address && quantityofitem && totalprice) {
-          const res = await fetch('/api/addorders',{
+          const res = await fetch('https://atifd.vercel.app/api/addorders',{
             method: "POST",
             body: JSON.stringify({
                 name:name.name,
