@@ -11,7 +11,7 @@ const Products =() => {
   const handleSubmit = async () => {
     try {
       if (typeofproduct && detailofproduct) {
-        const res = await fetch('/api/products',{
+        const res = await fetch('https://atifd.vercel.app/api/products',{
           method: "POST",
           body: JSON.stringify({
             typeofproduct:typeofproduct.typeofproduct,
