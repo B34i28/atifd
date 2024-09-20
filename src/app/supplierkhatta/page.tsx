@@ -37,7 +37,7 @@ function Supplierkhatta() {
           <input  className='py-2 rounded-md px-2' type="image" placeholder='Enter Supplier Name' />
         </div>
         <div>
-          <button onClick={(e) => {e.preventDefault() ; alert("Supplier is Added")}} className='bg-green-400 text-lg font-serif py-3 px-6 rounded-lg'>Add Supplier</button>
+          <button type='button' onClick={(e) => {e.preventDefault() ; alert("Supplier is Added")}} className='bg-green-400 text-lg font-serif py-3 px-6 rounded-lg'>Add Supplier</button>
         </div>
 
       </form>

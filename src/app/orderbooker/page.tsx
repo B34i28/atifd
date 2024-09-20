@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
 import Listoforderbooker from '../components/Listoforderbooker';
+import Addorder from '../components/Addorder';
 
 function Orderbooker() {
   return (
-    <div  className='h-full w-[50rem] ml-80 '>
+    <div  className='h-full ml-80 '>
       <h1 className='font-serif text-2xl font-bold ml-14'>Order Booker</h1>
       <form action=""  className='space-y-3 p-6 ml-14 mt-7 shadow-xl shadow-green-300 hover:shadow-green-500 bg-slate-200 h-[28rem] w-[35rem] rounded-lg'>
 
@@ -46,6 +47,7 @@ function Orderbooker() {
 
       </form>
       <Listoforderbooker />
+      <Addorder />
     </div>
   )
 }
