@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation'
 import React, { useRef, useState } from 'react'
 import ReactToPrint from 'react-to-print';
 import PrintData from './PrintData';
+import PrintThermalData from './PrintThermalData';
 
 function Addorder() {
     const componentRef = useRef<HTMLDivElement>(null); // print
@@ -68,7 +69,10 @@ function Addorder() {
                 <button onClick={handleSubmit} className='bg-green-400 text-lg font-serif py-3 flex justify-center items-center px-6 rounded-lg'>Add</button>
             </div>
         </form>
-        <ReactToPrint
+        <div>
+          <PrintThermalData content='Printing content goes here' />
+        </div>
+        {/* <ReactToPrint
         trigger={() => (
           <button className="py-3 px-6 bg-green-400 text-lg rounded-lg ml-[3.5rem] mt-12 ">
             Print Order
@@ -86,7 +90,7 @@ function Addorder() {
         />
         <div  ref={componentRef}>
             <PrintData />
-        </div>
+        </div> */}
     </div>
   )
 }

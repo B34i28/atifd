@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Navbar />
     <div className="flex">
-      <Sidebar onLinkClick={setCurrentPage} />
+      <Sidebar onLinkClick={ setCurrentPage} />
       <div className="flex-1 p-8 bg-gray-100 overflow-y-auto">
         <DashboardContent page={currentPage} />
       </div>

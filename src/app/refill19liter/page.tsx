@@ -9,7 +9,7 @@ function Refill19liter() {
       <form action="" className='space-y-3 p-6 ml-14 mt-7 shadow-xl shadow-green-300 hover:shadow-green-500 bg-slate-200 h-[28rem] w-[35rem] rounded-lg'>
         <div className='flex justify-between items-center'>
           <label className='font-serif text-lg' htmlFor="">Customer Name</label>
-          <input className='py-2 rounded-md px-2' type="text" placeholder='Enter Customer Name' />
+          <input className='py-2 rounded-md px-2' required type="text" placeholder='Enter Customer Name' />
         </div>
         <div className='flex justify-between items-center'>
           <label className='font-serif text-lg' htmlFor="">Mobile Number</label>

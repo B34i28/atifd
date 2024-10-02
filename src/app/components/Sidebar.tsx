@@ -8,8 +8,6 @@ type NavigationItemType = {
 
 function Sidebar({ onLinkClick }:any) {
 
-
-
   return (
     <div className='w-1/4 h-[42.9rem] left-0 overflow-y-auto fixed'>
       {

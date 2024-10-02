@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import ListofBillRecovery from '../components/ListofBillRecovery';
 
 function BILLrecovery() {
   return (
@@ -42,6 +43,7 @@ function BILLrecovery() {
         </div>
 
       </form>
+      <ListofBillRecovery />
     </div>
   )
 }

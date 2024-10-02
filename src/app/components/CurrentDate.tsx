@@ -10,7 +10,7 @@ const CurrentDate: React.FC = () => {
   const formattedDate = today.toLocaleDateString('en-GB', {
     weekday: 'long',
     year: 'numeric',
-    month: 'long',
+    month: 'numeric',
     day: 'numeric',
   });
 
