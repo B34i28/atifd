@@ -1,10 +1,7 @@
 import React, { useRef } from 'react';
 
-interface PrintThermalProps {
-  content: string; // The content you want to print
-}
 
-const PrintThermalData: React.FC<PrintThermalProps> = ({ content }) => {
+const PrintThermalData = () => {
   const printRef = useRef<HTMLDivElement | null>(null);
 
   const handlePrint = () => {
@@ -54,9 +51,41 @@ const PrintThermalData: React.FC<PrintThermalProps> = ({ content }) => {
 
   return (
     <div className="p-4">
-      <div ref={printRef} className="thermal-content bg-white text-black p-2">
+      <div ref={printRef} className="thermal-content w-[302px] space-y-1 bg-gray-200 text-black p-2">
         {/* The content to print */}
-        {content}
+        <h1 className='text-2xl font-serif font-semibold'>AVELLS</h1>
+        <div className='flex font-serif text-lg justify-between items-center'>
+          <h1>Name:</h1>
+          <p>Ahmed Gull</p>
+        </div>
+        <div className='flex text-lg justify-between  items-center'>
+          <h1 className='font-serif'>Mobile #:</h1>
+          <p>03335557788</p>
+        </div>
+        <div className='flex justify-between items-center  text-lg space-y-1'>
+          <h1>CNIC #:</h1>
+          <p>3750277788551</p>
+        </div>
+        <div className=' font-serif text-lg overflow-hidden'>
+          <p className=''>Address :</p>
+          <p>Bacha khan market peshawer kohat road</p>
+        </div>
+        <div className=' font-serif text-lg overflow-hidden'>
+          <p className=''>Description :</p>
+          <p>the product was sell to this person</p>
+        </div>
+        <div className='flex justify-between items-center  text-lg'>
+          <h1 className='font-serif'>Quantity:</h1>
+          <p>25</p>
+        </div>
+        <div className='flex justify-between items-center text-lg'>
+          <h1 className='font-serif'>Price of Item</h1>
+          <p>80</p>
+        </div>
+        <div className='flex justify-between items-center text-lg'>
+          <h1 className='font-serif'>Total Amount:</h1>
+          <p>2000</p>
+        </div>
       </div>
 
       <button

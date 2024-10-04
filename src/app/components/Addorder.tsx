@@ -70,8 +70,19 @@ function Addorder() {
             </div>
         </form>
         <div>
-          <PrintThermalData content='Printing content goes here' />
+          <PrintThermalData  />
         </div>
+
+    </div>
+  )
+}
+
+export default Addorder
+
+
+
+
+
         {/* <ReactToPrint
         trigger={() => (
           <button className="py-3 px-6 bg-green-400 text-lg rounded-lg ml-[3.5rem] mt-12 ">
@@ -91,8 +102,3 @@ function Addorder() {
         <div  ref={componentRef}>
             <PrintData />
         </div> */}
-    </div>
-  )
-}
-
-export default Addorder
